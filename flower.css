@@ -1026,6 +1026,24 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
     
 }
 
+
+#welcome-sequence {
+  position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    font-size: 5vw; /* Responsive font size */
+    color: #079097;
+    text-align: center;
+    white-space: nowrap; /* Prevent line breaks */
+    pointer-events: none;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center;
+    
+    
+}
+
 #welcome-sequence .message {
   position: absolute;
   opacity: 0;
