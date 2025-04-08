@@ -1004,44 +1004,138 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 
 
 
+
 #welcome-sequence {
   position: fixed;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
-    font-size: 5vw; /* Responsive font size */
+    font-size: 3vw; /* Responsive font size */
     color: #079097;
     text-align: center;
     white-space: nowrap; /* Prevent line breaks */
     pointer-events: none;
     display: flex; /* Use flexbox for horizontal layout */
     justify-content: center;
+    
+    
 }
 
 #welcome-sequence .message {
   position: absolute;
   opacity: 0;
-  animation: fadeInOut 2.5s ease-in-out forwards;
-
+  animation: fadeUp 8s ease-in-out forwards;
 }
 
 #welcome-sequence .message:nth-child(1) {
   animation-delay: 0s;
 }
 #welcome-sequence .message:nth-child(2) {
-  animation-delay: 3s;
+  animation-delay: 8s;
 }
 #welcome-sequence .message:nth-child(3) {
-  animation-delay: 6s;
+  animation-delay: 16s;
 }
 #welcome-sequence .message:nth-child(4) {
-  animation-delay: 9s;
+  animation-delay: 24s;
+}
+#welcome-sequence .message:nth-child(5) {
+  animation-delay: 32s;
+}
+#welcome-sequence .message:nth-child(6) {
+  animation-delay: 40s;
+}
+#welcome-sequence .message:nth-child(7) {
+  animation-delay: 48s;
+}
+#welcome-sequence .message:nth-child(8) {
+  animation-delay: 56s;
+}
+#welcome-sequence .message:nth-child(9) {
+  animation-delay: 64s;
 }
 
-@keyframes fadeInOut {
-  0% { opacity: 0; transform: translateY(10px); }
-  20% { opacity: 1; transform: translateY(0); }
-  80% { opacity: 1; transform: translateY(0); }
-  100% { opacity: 0; transform: translateY(-10px); }
+
+
+
+
+/* Animation for fading and moving up */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); /* Start below the initial position */
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0); /* Move to its original position */
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-50px); /* Move upwards */
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px); /* Move further upwards and fade out */
+  }
+}
+#welcome-gif {
+  position: fixed;
+  bottom: -10vh;               /* Space from the bottom */
+  left: 50%;
+  margin-top: 500px;
+  transform: translateX(-50%);
+  width: 30vw;               /* Responsive width */
+  max-width: 200px;
+  height: auto;
+  opacity: 0;
+  animation: fadeGif 10s ease-in-out forwards;
+  animation-delay: 72ss;       /* Delay before it appears */
+  z-index: 10000;             /* Just below the welcome text */
+}
+
+@keyframes fadeGif {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+#heart-gif {
+  position: fixed;
+  top: -40vh;               /* Space from the bottom */
+  left: 40vh;
+  margin-top: 500px;
+  transform: translateX(-50%);
+  width: 30vw;               /* Responsive width */
+  max-width: 200px;
+  height: auto;
+  opacity: 0;
+  animation: fadeGif 10s ease-in-out forwards;
+  animation-delay: 53s;       /* Delay before it appears */
+  z-index: 10000;             /* Just below the welcome text */
+}
+
+@keyframes fadeGif {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
