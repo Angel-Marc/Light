@@ -1112,8 +1112,8 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 
 #heart-gif {
   position: fixed;
-  top: -40vh;               /* Space from the bottom */
-  left: 40vh;
+  top: -10vh;               /* Space from the bottom */
+  left: 15vh;
   margin-top: 500px;
   transform: translateX(-50%);
   width: 30vw;               /* Responsive width */
