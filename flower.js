@@ -10,5 +10,5 @@ window.onload = () => {
     document.body.classList.remove("not-loaded");
     const seq = document.getElementById("welcome-sequence");
     if (seq) seq.style.display = "none"; // Hide the welcome sequence after it's done
-  }, 8000); // Adjust the timeout to match the total duration of your animation
+  }, 22500000); // Adjust the timeout to match the total duration of your animation
 };
