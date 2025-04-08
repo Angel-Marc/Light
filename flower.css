@@ -24,6 +24,11 @@ body {
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
 }
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+  touch-action: none;
+}
 
 
 @keyframes glow{
