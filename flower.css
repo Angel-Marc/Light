@@ -1112,7 +1112,7 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
   opacity: 0;
   animation: fadeGif 10s ease-in-out forwards;
   animation-delay: 64s;       /* Delay before it appears */
-  z-index: 10000;             /* Just below the welcome text */
+  z-index: -1;             /* Just below the welcome text */
 }
 
 @keyframes fadeGif {
@@ -1143,7 +1143,7 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
   opacity: 0;
   animation: fadeGif 4s ease-in-out forwards;
   animation-delay: 40s;       /* Delay before it appears */
-  z-index: 10000;             /* Just below the welcome text */
+  z-index: -1;             /* Just below the welcome text */
 }
 
 @keyframes fadeGif {
