@@ -55,9 +55,8 @@ body.no-scroll {
 
 .flowers {
   position: relative;
-  transform: scale(0.7);
-}
 
+}
 .flower {
   position: absolute;
   bottom: 10vmin;
@@ -1075,7 +1074,13 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
   animation-delay: 92s;
   
 
+}#welcome-sequence .message:nth-child(13) {
+  animation: fadeUp 20s ease-in-out forwards;
+  animation-delay: 105s;
+  
+
 }
+
 
 
 
@@ -1102,16 +1107,16 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 }
 #muahh-gif {
   position: fixed;
-  bottom: -10vh;               /* Space from the bottom */
+  bottom: -50vh;               /* Space from the bottom */
   left: 50%;
   margin-top: 500px;
   transform: translateX(-50%);
-  width: 30vw;               /* Responsive width */
-  max-width: 200px;
+  width: 50vw;               /* Responsive width */
+  max-width: 400px;
   height: auto;
   opacity: 0;
   animation: fadeGif 10s ease-in-out forwards;
-  animation-delay: 64s;       /* Delay before it appears */
+  animation-delay: 0s;       /* Delay before it appears */
   z-index: -1;             /* Just below the welcome text */
 }
 
@@ -1133,16 +1138,77 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 
 #heart-gif {
   position: fixed;
-  top: -10vh;               /* Space from the bottom */
-  left: 3vh;
+  bottom: -50vh;               /* Space from the bottom */
+  left: 50%;
   margin-top: 500px;
   transform: translateX(-50%);
-  width: 30vw;               /* Responsive width */
-  max-width: 200px;
+  width: 50vw;               /* Responsive width */
+  max-width: 400px;
   height: auto;
   opacity: 0;
-  animation: fadeGif 4s ease-in-out forwards;
+  animation: fadeGif 10s ease-in-out forwards;
   animation-delay: 40s;       /* Delay before it appears */
+  z-index: -1;             /* Just below the welcome text */
+}
+
+@keyframes fadeGif {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#song-gif {
+  position: fixed;
+  bottom: -50vh;               /* Space from the bottom */
+  left: 50%;
+  margin-top: 500px;
+  transform: translateX(-50%);
+  width: 50vw;               /* Responsive width */
+  max-width: 400px;
+  height: auto;
+  opacity: 0;
+  animation: fadeGif 6s ease-in-out forwards;
+  animation-delay: 25s;       /* Delay before it appears */
+  z-index: -1;             /* Just below the welcome text */
+}
+
+@keyframes fadeGif {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+#cheers-gif {
+  position: fixed;
+  bottom: -50vh;               /* Space from the bottom */
+  left: 50%;
+  margin-top: 500px;
+  transform: translateX(-50%);
+  width: 50vw;               /* Responsive width */
+  max-width: 400px;
+  height: auto;
+  opacity: 0;
+  animation: fadeGif 10s ease-in-out forwards;
+  animation-delay: 30s;       /* Delay before it appears */
   z-index: -1;             /* Just below the welcome text */
 }
 
@@ -1167,13 +1233,42 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
   
   top: 0;               /* Space from the bottom */
   left: 50%;
-  bottom: 30%;
+  bottom: -100vh;  
   transform: translateX(-50%);
   width: 60vw;               /* Responsive width */
   height:80vh;
   opacity: 0;
   animation: fadeGif 15s ease-in-out forwards;
   animation-delay: 95s;       /* Delay before it appears */
+  z-index: -1;             /* Just below the welcome text */
+}
+
+@keyframes fadeGif {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#peace-gif {
+  position: fixed;
+  bottom: -50vh;               /* Space from the bottom */
+  left: 50%;
+  margin-top: 500px;
+  transform: translateX(-50%);
+  width: 50vw;               /* Responsive width */
+  max-width: 400px;
+  height: auto;
+  opacity: 0;
+  animation: fadeGif 10s ease-in-out forwards;
+  animation-delay: 80s;       /* Delay before it appears */
   z-index: -1;             /* Just below the welcome text */
 }
 
